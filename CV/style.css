@@ -1,0 +1,370 @@
+:root {
+    --primary-grey: #4a4a4a;
+    --light-grey: #808080;
+    --medium-grey: #595959;
+    --border-grey: #b8b8b8;
+    --dark-grey-brown: #32231f;
+    --brown: #6d493b;
+    --grey-shape: #a6a6a6;
+    --lighter-grey: #cccccc;
+    --light-blue: #e9ecef;
+}
+
+.cv-container {
+    max-width: 950px;
+    margin: 30px auto;
+    background-color: white;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.356);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.cv-header {
+    background-color: var(--light-blue);
+    padding: 2rem 2.5rem 2rem;
+    border-bottom: 3px solid var(--primary-grey);
+    position: relative;
+}
+
+.name-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    color: black;
+    margin-top: 0.2rem;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.name-title span {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: black;
+    margin-top: 2px;
+    text-transform: uppercase;
+    text-align: left;
+
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0.5rem;
+    margin: 0;
+
+}
+
+.contact-list li {
+    margin-bottom: 0.35rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.contact-list i {
+    font-size: 1rem;
+    width: 20px;
+    text-align: center;
+}
+
+hr {
+    margin: 0;
+    margin-top: 0.85rem !important;
+    margin-bottom: 0.85rem !important;
+}
+
+.row, .mt-3 {
+    margin-top: 0 !important;
+}
+
+
+.section-header, #skills-header, #strengths-header, #languages-header, #about-header {
+    background: var(--primary-grey);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 0.55rem 1.2rem;
+    margin-bottom: 0.2rem;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.section-header:hover, #skills-header:hover, #strengths-header:hover, #languages-header:hover, #about-header:hover {
+    background: var(--medium-grey);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 0.55rem 1.2rem;
+    margin-bottom: 0.2rem;
+    border-radius: 4px;
+    display: inline-block;
+    filter: drop-shadow(rgba(0, 35, 92, 0.5) 0 0 10px);
+}
+
+.box-shadow
+{
+	-webkit-box-shadow: 0 1px 1px rgba(72,78,85,.6);
+	box-shadow: 0 1px 1px rgba(72,78,85,.6);
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+}
+
+.box-shadow:hover
+{
+	-webkit-box-shadow: 0 20px 40px rgba(72,78,85,.6);
+	box-shadow: 0 20px 40px rgba(72,78,85,.6);
+	-webkit-transform: translateY(-7px);
+	-moz-transform: translateY(-7px);
+	-ms-transform: translateY(-7px);
+	-o-transform: translateY(-7px);
+	transform: translateY(-7px);
+}
+
+.content-row {
+    padding: 1.5rem 2.5rem 1rem;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 5px rgba(119, 119, 119, 0.555);
+    margin: 1rem 0;
+}
+
+.card-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--dark-grey-brown);
+    margin-bottom: 0.15rem;
+}
+
+.card-subtitle, .mb-2 {
+    font-size: 0.85rem;
+    color: var(--light-grey);
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.btn, .btn-secondary {
+    outline: var(--light-grey) !important;
+    background-color: var(--lighter-grey) !important;
+    outline-color: var(--primary-grey) !important;
+    outline-width: 1rem !important;
+    color: black;
+    margin-bottom: 0 !important;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.btn:hover, .btn-secondary:hover {
+    outline: var(--light-grey) !important;
+    background-color: var(--light-grey) !important;
+    outline-color: var(--primary-grey) !important;
+    outline-width: 1rem !important;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0 !important;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.card-subheading {
+    font-size: 1rem !important;
+    color: var(--brown);
+    font-weight: bold;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-family: "Open sans", sans-serif;
+    font-size: 0.9rem;
+    color: var(--medium-grey);
+    font-weight: 400;
+}
+
+li {
+    font-family: "Open sans", sans-serif;
+    list-style: disc;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--medium-grey);
+}
+
+.bottom-section {
+    background: var(--lighter-grey);
+    padding: 1.8rem 2.5rem 2.2rem;
+    border-top: 1px solid var(--border-grey);
+}
+
+.col-md-4 {
+    margin: 0 0 !important;
+}
+
+p {
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 25;
+    font-size: 0.85rem;
+    padding-top: 0.5rem;
+}
+
+h1 {
+    text-align: center;
+    padding: 0.01rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+h2 {
+    text-align: center;
+    padding: 2%;
+    font-weight: bold;
+    color: #595959;
+}
+
+h3 {
+    text-align: left;
+    padding: 2%;
+    font-weight: bold;
+    color: #000000;
+}
+
+h4 {
+    text-align: left;
+    padding: 2%;
+    font-weight: bold;
+    color: #808080;
+}
+
+h4 {
+    text-align: left;
+    padding: 2%;
+    font-weight: bold;
+    color: #6D493B;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    background-color: #e9ecef;
+    color: #333333;
+    line-height: 1.5;
+}
+
+.nav {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #A6A6A6;
+    border-bottom: none;
+    margin: 0;
+    gap: 0.5rem;
+    border-bottom: 3px solid var(--primary-grey);
+}
+
+.nav-item {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    outline-width: 0.2rem;
+    outline-color: var(--border-grey);
+    outline-style: solid;
+    border-radius: 0.5rem; 
+
+}
+
+.nav-item, 
+.nav-link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2;
+    border: none;
+    color: black;
+    font-weight: bold;
+    padding: 0.3rem !important;
+    margin: 0.2rem !important;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+.navbar-text {
+    margin: 0.2rem;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.nav-item:hover {
+    outline-width: 0.2rem;
+    outline-color: var(--border-grey);
+    outline-style: solid;
+    border-radius: 0.5rem; 
+    background-color: rgb(230, 230, 230);
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+
+/* ---- Responsive ----- */
+@media (max-width: 767.98px){
+    .cv-header {
+        text-align: center;
+        padding: 1.5rem 1.2rem;
+    }
+
+    .profile-img {
+        margin-bottom: 1rem;
+    }
+
+    .content-row, .bottom-section {
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+
+    .name-title {
+        font-size: 2rem;
+    }
+}
+
+/* --- Print styles --- */
+@media print {
+    body {
+        background-color: white;
+    }
+
+    .cv-container {
+        box-shadow: none;
+        margin: 0;
+    }
+}
